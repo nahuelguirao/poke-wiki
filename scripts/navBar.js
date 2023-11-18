@@ -1,7 +1,6 @@
-const boton = document.getElementById('icono-menu')
-const clasesPokemones = document.getElementById('navbar')
+const button = document.getElementById('menu-button')
+const navbar = document.getElementById('navbar')
 
-//Cambia la clase al tocar el boton desplegable del menu mobile
-boton.addEventListener('click', function() {
-    clasesPokemones.classList.toggle('mostrar')
+button.addEventListener('click', function() {
+    navbar.classList.toggle('none')
 })
