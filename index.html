@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeWiki</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/coloresClases.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/cards.css">
+    <!-- Icon  -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- General styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Colors -->
+    <link rel="stylesheet" href="styles/colors.css">
+    <!-- Header styles -->
+    <link rel="stylesheet" href="styles/header.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <header id="header">
-        <img src="img/logoPokemon.png" alt="Logo pokemón">
-        <img id="icono-menu" src="img/icono-menu.png" alt="icono menu">
-        <ul id="navbar">
+    <!-- HEADER -->
+    <header>
+        <img src="img/logo-pokemon.png" alt="Pokemon Logo">
+        <img id="menu-button" src="img/icon-menu.png" alt="Menu Icon">
+        <ul id="navbar" class="none">
             <li><button class="see-all">SEE ALL</button></li>
             <li><button class="normal">NORMAL</button></li>
             <li><button class="fire">FIRE</button></li>
@@ -38,76 +44,69 @@
             <li><button class="fairy">FAIRY</button></li>
         </ul>
     </header>
+    <!-- MAIN SECTION -->
     <main>
-        <div class="all">
-            <div class="all-pokemon" id="list-pokemon">
-                <div class="card">
+        <div class="card-container">
+            <div class="card">
+                <div class="pokemon-image">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                        alt="Pokemon photo">
                     <p class="pokemon-id-back">#01</p>
-                    <div class="pokemon-image">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
-                            alt="Pikachu">
-                    </div>
-                    <div class="pokemon-info">
-                        <div class="name-container">
-                            <p class="pokemon-id">#01</p>
-                            <h2 class="pokemon-name">PIKACHU</h2>
-                        </div>
-                        <div class="pokemon-types">
-                            <p class="electric type">ELECTRIC</p>
-                            <p class="fighting type">FIGHTING</p>
-                        </div>
-                    </div>
-                    <div class="pokemon-stats">
-                        <p class="stat">4M</p>
-                        <p class="stat">20kg</p>
-                    </div>
                 </div>
-                <div class="card">
-                    <p class="pokemon-id-back">#01</p>
-                    <div class="pokemon-image">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
-                            alt="Pikachu">
-                    </div>
-                    <div class="pokemon-info">
-                        <div class="name-container">
-                            <p class="pokemon-id">#01</p>
-                            <h2 class="pokemon-name">PIKACHU</h2>
-                        </div>
-                        <div class="pokemon-types">
-                            <p class="electric type">ELECTRIC</p>
-                            <p class="fighting type">FIGHTING</p>
-                        </div>
-                    </div>
-                    <div class="pokemon-stats">
-                        <p class="stat">4M</p>
-                        <p class="stat">20kg</p>
-                    </div>
+                <div class="pokemon-description">
+                    <p class="pokemon-id">#01</p>
+                    <h2 class="pokemon-name">PIKACHU</h2>
                 </div>
-                <div class="card">
+                <div class="pokemon-types">
+                    <p class="type electric">ELECTRIC</p>
+                    <p class="type fighting">FIGHTING</p>
+                </div>
+                <div class="pokemon-stats">
+                    <p class="stat">4M</p>
+                    <p class="stat">20KG</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pokemon-image">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                        alt="Pokemon photo">
                     <p class="pokemon-id-back">#01</p>
-                    <div class="pokemon-image">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
-                            alt="Pikachu">
-                    </div>
-                    <div class="pokemon-info">
-                        <div class="name-container">
-                            <p class="pokemon-id">#01</p>
-                            <h2 class="pokemon-name">PIKACHU</h2>
-                        </div>
-                        <div class="pokemon-types">
-                            <p class="electric type">ELECTRIC</p>
-                            <p class="fighting type">FIGHTING</p>
-                        </div>
-                    </div>
-                    <div class="pokemon-stats">
-                        <p class="stat">4M</p>
-                        <p class="stat">20kg</p>
-                    </div>
+                </div>
+                <div class="pokemon-description">
+                    <p class="pokemon-id">#01</p>
+                    <h2 class="pokemon-name">PIKACHU</h2>
+                </div>
+                <div class="pokemon-types">
+                    <p class="type electric">ELECTRIC</p>
+                    <p class="type fighting">FIGHTING</p>
+                </div>
+                <div class="pokemon-stats">
+                    <p class="stat">4M</p>
+                    <p class="stat">20KG</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pokemon-image">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                        alt="Pokemon photo">
+                    <p class="pokemon-id-back">#01</p>
+                </div>
+                <div class="pokemon-description">
+                    <p class="pokemon-id">#01</p>
+                    <h2 class="pokemon-name">PIKACHU</h2>
+                </div>
+                <div class="pokemon-types">
+                    <p class="type electric">ELECTRIC</p>
+                    <p class="type fighting">FIGHTING</p>
+                </div>
+                <div class="pokemon-stats">
+                    <p class="stat">4M</p>
+                    <p class="stat">20KG</p>
                 </div>
             </div>
         </div>
     </main>
-    <script src="scripts/navBar.js"></script>
+    <script src="scripts/navbar.js"></script>
 </body>
 
 </html>
