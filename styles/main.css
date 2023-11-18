@@ -69,8 +69,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: .5rem;
     padding: 0.25rem;
+}
+
+.pokemon-name{
+    text-transform: uppercase;
 }
 
 .pokemon-id{
@@ -85,6 +90,7 @@ main{
     margin-top: 0.5rem;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
     gap: .75rem;
 }
 
