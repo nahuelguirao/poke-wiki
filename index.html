@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="styles/colors.css">
     <!-- Header styles -->
     <link rel="stylesheet" href="styles/header.css">
+    <!-- Div search Styles -->
+    <link rel="stylesheet" href="styles/search.css">
     <!-- Main Styles -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -45,12 +47,18 @@
         </ul>
     </header>
     <!-- MAIN SECTION -->
-    <main>
+    <main id="main">
+        <div class="search">
+            <input id="input-name" type="text" placeholder="search by pokemon's name...">
+            <button class="button-filter">SEARCH</button>
+        </div>
         <div class="card-container">
         </div>
     </main>
     <!-- API script -->
     <script src="scripts/main.js"></script>
+    <!-- Filter by name -->
+    <script src="scripts/filterName.js"></script>
     <!-- Mobile Menu -->
     <script src="scripts/navbar.js"></script>
 </body>

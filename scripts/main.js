@@ -1,4 +1,6 @@
 const containerPokemons = document.querySelector('.card-container');
+const main = document.getElementById('main')
+
 let url = `https://pokeapi.co/api/v2/pokemon/`;
 let requests = [];
 
@@ -60,8 +62,14 @@ let buttons = document.querySelectorAll('.button')
 buttons.forEach(button => button.addEventListener('click', (e) => {
     //Get button value (to filter)
     const buttonId = e.currentTarget.id
+    
     //Empty the container
+    const badResult = main.querySelector('.bad-result')
+    if (badResult){
+        badResult.innerHTML = ''
+    }
     containerPokemons.innerHTML = ''
+    
     //Does the filter
     for (let i = 1 ; i <= 200; i++){
         fetch(url+i)
